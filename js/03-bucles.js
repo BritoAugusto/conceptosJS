@@ -28,10 +28,24 @@ agregar un codigo para que la condicion logica deje de repetirse
 }while(condicion logica)
 */
 
-let linea = 1;
-do{
-     document.write(`<p>Renglon número ${linea}</p>`);
-linea++;
-}while (linea <= 5)
+/*let linea = 11;
+do {
+  document.write(`<p>Renglon número ${linea}</p>`);
+  linea++;
+} while (linea <= 5);
+ */
 
 //estructura for
+
+/*
+for(let variable = 1; variable <= 10; variable++){
+      aqui agrego todo el codigo que quiero repetir
+
+}
+
+*/
+
+    
+for(let contador =10; contador > 0; contador--){
+    document.write(`<p>Cuenta regresiva ${contador}</p>`)
+}
