@@ -15,7 +15,7 @@ for(let i = 0; i < frase.length; i++ ){
 
     // 3- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
 
-let fraseCompleta = "";
+/* let fraseCompleta = "";
 
 do {
     const palabraIngresada = prompt('ingrese una palabra')
@@ -34,3 +34,19 @@ do {
 console.log(fraseCompleta);
 
 document.write(`Frase ingresada: ${fraseCompleta}`);
+*/
+
+// ejercicio 10 TP-2
+// 10- Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro de cada una de las celdas deberá escribirse un número consecutivo en orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
+
+const filas = parseInt(prompt('Ingrese un número de filas'))
+const columnas = parseInt(prompt('Ingrese un número de columnas'))
+            
+document.write(`<table>
+            <tbody>`)
+  document.write(`<tr>`)
+for(let indiceColumnas = 1; indiceColumnas <= columnas; indiceColumnas++)
+    document.write(`<td>1</td>`)
+
+    document.write(`</tr>`) 
+document.write(`</tbody> </table>`)

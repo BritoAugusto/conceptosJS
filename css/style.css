@@ -1,3 +1,11 @@
 .textoResaltado {
     background-color: yellow;
 }
+
+table, td{
+    border: 1px solid blue;
+}
+
+td {
+    padding: 5px;
+}
