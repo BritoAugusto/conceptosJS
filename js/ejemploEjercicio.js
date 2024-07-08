@@ -41,13 +41,16 @@ document.write(`Frase ingresada: ${fraseCompleta}`);
 
 const filas = parseInt(prompt('Ingrese un número de filas'))
 const columnas = parseInt(prompt('Ingrese un número de columnas'))
-            
-document.write(`<table>
-            <tbody>`)
+
+let totalCeldas = filas * columnas;
+
+document.write(`<table><tbody>`)
     for(let indiceFilas = 1; indiceFilas <= filas; indiceFilas++){      
   document.write(`<tr>`)
 for(let indiceColumnas = 1; indiceColumnas <= columnas; indiceColumnas++){
-    document.write(`<td>1</td>`)
+    document.write(`<td>${totalCeldas}</td>`)
+    //decrementar
+    totalCeldas--; // totalCeldas = totalCeldas -1
 }
     document.write(`</tr>`) 
     }
